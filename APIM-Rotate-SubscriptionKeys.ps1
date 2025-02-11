@@ -1,5 +1,5 @@
 param(
-    [string]$apiName,
+    [string]$apimName,
     [string]$apimResourceGroup,
     [string]$masterSubscriptionId
 )
