@@ -10,6 +10,8 @@ param(
 #that access token is used to call the azure management api
 #in this way we can use the backup functionality of APIM using a systemassigned identity, this is not possible in a direct way using the azure cli
 
+az login --identity
+
 #get access token using azure cli
 $token = az account get-access-token --subscription $subscriptionId --query accessToken --output tsv
       
